@@ -1,0 +1,128 @@
+.sec12 {
+padding: 1rem 0 4rem 0;
+}
+.sec12-of {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sec12-rigth {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: space-evenly;
+    justify-self: center;
+    border: solid 1px;
+    border-radius: 7px;
+}
+.sec12-rigth h5{
+    padding-left: 15px;
+}
+.sec12-rigth span{
+    font-weight: 100;
+}
+.sec12-rigth div{
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+}
+.head1 {
+    color: #BDBDBD;
+}
+.head2 {
+    color: #00B2B2;
+}
+.sec12-main {
+    display: grid;
+    gap: 20px;
+}
+.sec12-main h2{
+    padding: 1rem 0;
+}
+.sec12-main div{    
+    display: flex;
+    gap: 10px;
+}
+.sec12-main span{
+    font-weight: 800;
+}
+.fa-check {
+    color: #00B2B2;
+}
+@media (max-width:576px){
+    .sec12-of {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec12-rigth {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+    .sec12-left{
+        transform: translate(-3%);
+        display: grid;
+        justify-self: center;
+    }
+    .sec12-left img{
+        width: 60vh;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .sec12-of{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec12-rigth {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+    .sec12-left{
+        display: grid;
+        justify-self: center;
+    }
+    .sec12-left img{
+        width: 60vh;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .sec12-of {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec12-rigth {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+    .sec12-left{
+        display: grid;
+        justify-self: center;
+    }
+    .sec12-left img{
+        width: 80vh;
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .sec12-of {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec12-rigth {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+    .sec12-left{
+        display: grid;
+        justify-self: center;
+    }
+    .sec12-left img{
+        width: 80vh;
+    }
+}
+@media (min-width:1200px) and (max-width:1500px){
+    .sec12-of {
+        width: 75%;
+    }
+}

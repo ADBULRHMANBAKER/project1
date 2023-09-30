@@ -1,0 +1,39 @@
+.header-sec1 {
+    background-color: #FDC800;
+}
+.header-sec1 .container{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location{
+    display: flex;
+    gap: 20px; 
+}
+.location3{
+    gap: 13px;
+}
+.location3 .fa-brands:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: rgb(255, 179, 0);
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:576px){
+    .header-sec1 {
+        display: none;
+}
+}
+@media (min-width:576px) and (max-width:768px){
+    .header-sec1 {
+        display: none;
+}
+}
+

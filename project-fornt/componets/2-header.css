@@ -1,0 +1,104 @@
+header {
+    background-color:#F0F4F9;
+}
+header .container{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header-main  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+#fa-solid1{
+    display: none;
+    cursor: pointer;
+}
+.header-left {
+    position: absolute;
+    right: 15%;
+    gap: 45px;
+}
+.button1 {
+    background-color:#FDC800 ;
+    width: 115px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.button2 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgb(69, 64, 64);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.button1:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+    color: #FFFFFF;
+}
+.button2:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+    color: #FDC800;
+}
+.header-left a:hover{
+    background-color: #FDC800;
+    border-radius: 10px;
+    width: 60px;
+    height: 35px;
+    transform: scale(0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:576px){
+    .header-left {
+    display: none;
+    }
+    #fa-solid1{
+        display: inline-block;
+        color: #FDC800;
+        margin: 0 25px;
+    }
+    .header-left a{
+    background-color: aqua;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .header-left {
+        display: none;
+        }
+}
+@media (min-width:768px) and (max-width:992px){
+    .header-left {
+        display: none;
+        }
+        #fa-solid1{
+            display: inline-block;
+            color: #FDC800;
+            position: relative;
+            left: 15%;
+        }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .header-left {
+        transform: translate(-30%);
+        }
+}
+@media (min-width:1200px) and (max-width:1500px){
+    .header-left {
+        transform: translate(-30%);
+        }
+}
