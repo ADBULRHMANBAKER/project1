@@ -1,0 +1,231 @@
+main {
+    padding: 2rem 0;
+    background-color: #F0F4F9;
+}
+main .container{
+    position: relative;
+}
+.sec-main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 7rem 0;
+}
+.main-left {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}
+.main-left .p1{
+font-size: 20px;
+font-weight: 700;
+}
+.main-left .p2{
+    font-size: 40px;
+    font-weight: 500; 
+}
+.main-left .p3{
+    font-size: 40px;
+    font-weight: 500; 
+}
+.button-link {
+    display: flex;
+    gap: 20px;
+}
+.button-link1 {
+    background-color:#FDC800 ;
+    width: 115px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.button-link2 {
+    background-color:#FFFFFF ;
+    width: 115px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+    transition: 0.2s;
+}
+.main-rigth {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.main-rigth img{
+    width: 88%;
+}
+.main-center {
+    width: 85%;
+    margin: auto;
+    height: 170px; ;
+    background-color:#002147 ;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.box-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+.title1{
+    color: #FFFFFF;
+}
+.title2{
+    color: #FFFFFF;   
+}
+.yellow {
+    color: #FDC800;
+}
+.main-box {
+display: flex;
+align-items: center;
+color:#FFFFFF;
+gap: 20px;
+}
+.word4 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+.det {
+    font-size:2rem;
+}
+.numbers{
+    font-size: 2rem;
+}
+.button3:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: #FFFFFF;
+}
+.button4:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: #FDC800;
+}
+@media (max-width:576px){
+    .sec-main{
+        margin-right: 15px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-center{
+        transform: translate(-7%,67%);
+        position: relative;
+    }
+    .main-rigth img{
+        width: 95%;
+        transform: translate(5%,20%);
+    }
+    .main-left{
+        position: relative;
+        bottom: 15%;
+    }
+    .box-center img{
+        display: none;
+    }
+    .title1{
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    }
+    .title2{
+        position: absolute;
+        left: 15%;
+        top: 35%;
+        }
+    .num1 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .det {
+        font-size: 17px;
+    }
+    .main-box{
+        position: absolute;
+        bottom: 10%;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .sec-main{ 
+        margin-right: 15px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-center{
+        transform: translate(0%,17%);
+    }
+    .main-rigth img{
+        width: 85%;
+        transform: translateX(5%);
+    }
+    .main-left{
+        position: relative;
+        bottom: 15%;
+    }
+    .box-center img{
+        display: none;
+    }
+    .title1{
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    }
+    .title2{
+        position: absolute;
+        left: 15%;
+        top: 35%;
+        }
+    .num1 {
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    .det {
+        font-size: 19px;
+    }
+    .main-box{
+        position: absolute;
+        bottom: 10%;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .main-center{
+        transform: translate(0%,18%);
+    }
+    .box-center img{
+        position: absolute;
+        left: 3%;
+    }
+    .title1{
+        position: absolute;
+        left: 42%;
+        top: 5%;
+        }
+        .title2{
+            position: absolute;
+            left: 42%;
+            top: 35%;
+            }
+        .num1{
+            font-size: 22px;
+            font-weight: bolder;
+        }
+        .det {
+            font-size: 19px;
+        }
+        .main-box{
+            position: absolute;
+            bottom: 10%;
+            left: 40%;
+        }
+}

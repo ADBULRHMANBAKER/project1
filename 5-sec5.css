@@ -1,0 +1,125 @@
+.sec5 {
+    background-color: #FFFFFF;
+    padding: 5rem 0;
+}
+.sec5 .container{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    width: 66%;
+}
+
+.sec5-left {
+position: relative;
+}
+.img2 {
+    position: relative;
+    width: 120px;
+    height:120px;
+    background-color: #FDC800;
+    position:absolute;
+    right: 88%;
+    bottom: 85%; 
+}
+.img3 {
+position: absolute;
+top: 13%;
+left: 18%;
+}
+.sec5-right {
+    width: 75%;
+    height:77px;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 88%;
+    left: 9%;
+}
+.title12 {
+    font-size: larger;
+    font-weight: 700;
+}
+.title13 {
+    opacity: 0.6;  
+}
+.sec5-anthor {
+    padding: 2rem 0rem 0.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.title14 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.title15 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FDC800;
+}
+.title16 {
+    font-size: 12px;
+    width: 77%;
+}
+.title17 {
+    font-size: 15px;
+    font-weight: 600;
+}
+.sec5-anth2 {
+    background-color: #F0F4F9;
+    height: 97px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.img4 {
+    width: 80px;
+    height:80px ;
+}
+.title18 {
+    font-size: 17px;
+    font-weight: 600;
+}
+.title19 {
+    padding-top: 7px;
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+@media (max-width:576px){
+    .sec5 .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sec5-left img{
+        width: 110%;
+    }
+    .img2 .img3{
+        width: 80%;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .sec5 .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sec5-left img{
+        width: 110%;
+    }
+    .img2 .img3{
+        width: 85%;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .sec5 .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sec5-left img{
+        width: 110%;
+    }
+    .img2 .img3{
+        width: 85%;
+    }
+}

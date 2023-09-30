@@ -1,0 +1,100 @@
+.sec7 {
+    padding: 2rem 0; 
+}
+.sec7 .container{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.input-email {
+    display: flex;
+    flex-direction: column; 
+    gap: 7px;
+    position: relative; 
+    justify-content: center;
+}
+.title12{
+    font-size: 15px;
+    color: #FDC800;
+}
+.title13{
+    width: 65%;
+    font-size: 30px;
+    font-weight: 700;
+}
+.input {
+    padding: 25px;
+    width: 380px;
+    height: 40px;
+    box-shadow: 2px 1px 2px 2px #BDBDBD;
+    border: #D3E6FB;
+}
+.input-email .fa-solid{
+    position: absolute;
+    top: 59%;
+    left: 1%;
+}
+.button-input {
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    top: 57%;
+    right: 23%;
+    background-color: #FDC800;
+    border-radius:5px ;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.button-input:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: #ffffff;
+}
+@media (max-width:576px){
+    .sec7 .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .button-input{
+        top: 70%;
+        right: 2%;
+    }
+    .input-email .fa-solid{
+        top: 79%;
+        left: 1%;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .sec7 .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .button-input{
+        position: absolute;
+        top: 70%;
+        right:15%;
+    }
+    .input-email .fa-solid{
+        top: 79%;
+        left: 1%;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .sec7 .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .button-input{
+        position: absolute;
+        top: 70%;
+        right:35%;
+    }
+    .input-email .fa-solid{
+        top: 79%;
+        left: 1%;
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .button-input{
+        position: absolute;
+        right:18%;
+    }
+}

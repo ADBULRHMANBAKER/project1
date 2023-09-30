@@ -1,0 +1,42 @@
+.sec6 {
+    padding: 4rem 0;
+    background-image: url(./../imgs/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#F0F4F9 ;
+}
+.sec6 .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-content: center;
+    margin: auto;
+}
+.num2 {
+    font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
+}
+.title43{
+    font-size: 15px;
+    color:#00B2B2;
+}
+
+@media (max-width:576px){
+    .sec6 .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .sec6 .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .sec6 .container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sec6 .container div:nth-child(4){
+        transform: translate(80%);
+    }
+}
